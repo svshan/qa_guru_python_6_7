@@ -1,6 +1,7 @@
 requests
-selene==2.0.0rc3post2
 openpyxl
 pypdf
 pytest
-selenium==4.5.0
+selenium
+selene==2.0.0rc3post3
+webdriver_manager == 4.0.0

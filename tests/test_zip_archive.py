@@ -11,7 +11,7 @@ resources_path = os.path.join(os.path.dirname(__file__), '..', 'resources')
 files = os.listdir(resources_path)
 
 
-def test_zip_file_creation():
+def test_zip_file_creation_and_reading():
     with ZipFile(zip_file_path, 'w') as archive:
         for file in files:
             archive.write(os.path.join(resources_path, file), file)
