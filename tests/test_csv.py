@@ -8,7 +8,7 @@ csv_file_path = os.path.join(resources_path, 'eggs.csv')
 
 
 def test_csv_file():
-    with open(csv_file_path, 'w') as csvfile:
+    with open(csv_file_path, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',')
         csvwriter.writerow(['Anna', 'Pavel', 'Peter'])
         csvwriter.writerow(['Alex', 'Serj', 'Yana'])
